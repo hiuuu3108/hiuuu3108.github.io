@@ -1,0 +1,433 @@
+@media (min-width:768px) and (max-width:1200px) { 
+    .nav-bar p {
+        display: none;
+    }
+
+    .nav-bar span {
+        display: none;
+    }
+
+
+
+* {
+    margin: 0;
+    font-family:sans-serif;
+
+}
+
+.cv{
+    margin: 40px;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+section > .container{
+    width: 1170px;
+    margin: auto;
+    display: block;
+    padding: 30px 50px;
+}
+
+#nav-bar {
+    text-align: center;
+}
+
+/* Banner */
+
+.banner{
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Navbar */
+.nav-bar{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 1fr) 0.5fr repeat(2, 1fr) 1fr;
+}
+.nav-bar a{
+    border-left: 1px solid gainsboro;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar div{
+    border-left: 1px solid gainsboro;
+}
+
+.nav-bar i{
+    color: lightskyblue;
+}
+
+/* Thông tin cá nhân */
+.about{
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.section-title{
+    margin-bottom: 25px;
+}
+
+.target{
+    background-color: rgb(233, 232, 232);
+}
+
+.info{
+    font-size: 12px;
+}
+
+.hide{
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+/* Thông tin nghề nghiệp */
+.container-1{
+    display: grid;
+    grid-template-columns: repeat(2 , 350px);
+    column-gap: 20px;
+    height:100%;
+    /* background-color: palevioletred; */
+    justify-content: center;    
+}
+
+.date{
+    font-size: 14px;
+    font-style: italic;
+}
+
+.box{
+    border: 1.5px solid gainsboro;
+}
+
+.icon{
+    margin-top: 20%;
+    font-size: 36px;
+}
+
+.title{
+    text-align: center;
+}
+
+/* Kinh nghiệm */
+.experience{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px;
+    color: gray;
+    grid-row-start: 1;
+    grid-row-end: 2.5;
+}
+
+.experience-info{
+    grid-column: 1 / 3;
+    margin: 0 10px 0 44px;
+    line-height: 30px;
+}
+
+.experience div h1{
+    margin-top: 15%;
+}
+
+/* Học vấn */
+.experience-info h3 + span::after{
+    content:"Hiện tại";
+    color: white;
+    background-color:lightskyblue ;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.education{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px;
+    color: gray;
+}
+
+.education-info{
+    margin: 0 10px 0 44px;
+    line-height: 30px;
+}
+
+.education div h1{
+    margin-top: 15%;
+}
+
+/* Hoạt động */
+.activity{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px;
+    color: gray;
+}
+
+.activity-info{
+    grid-column: 1 / 3;
+    margin: 0 10px 0 44px;
+    line-height: 30px;
+}
+
+.activity div h1{
+    margin-top: 15%;
+}
+
+/* Sở thích */
+.hobby{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px;
+    color: gray;
+    grid-row-start: 2;
+    grid-row-end:3 ;
+}
+
+.hobby-info{
+    grid-column: 1 / 3;
+    margin: 0 10px 0 44px;
+    line-height: 30px;
+    color: lightblue;
+}
+
+.hobby div h1{
+    margin-top: 15%;
+}
+
+.border{
+    border: 1px solid lightblue;
+    border-radius: 50%;
+    width:50px; 
+    height: 50px;
+    font-size: 20px;
+    margin-right: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.hobby div i{
+    padding-top: 10px;
+}
+
+
+/* Ngôn ngữ */
+.language{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px;
+    color: gray;
+}
+
+.language-info{
+    /* grid-column: 1 / 3; */
+    margin: 0 10px 0 44px;
+    line-height: 30px;
+}
+
+.language div h1{
+    margin-top: 15%;
+}
+
+.skill-level{
+    background: #199cdb;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+    color: white;
+}
+
+.skill-level-grey{
+    background: grey;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+    color: white;
+}
+
+
+/* Kỹ năng */
+.skill{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px;
+    color: gray;
+}
+
+.skill-info{
+    grid-column: 1 / 3;
+    margin: 0 10px 0 44px;
+    line-height: 30px;
+}
+
+.skill div h1{
+    margin-top: 15%;
+}
+
+.box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-content {
+    display: none; /* Ẩn nội dung chi tiết ban đầu */
+}
+
+.view-more-btn {
+    display: none;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.box:hover .view-more-btn {
+    display: block; /* Hiển thị nút View More khi hover */
+}
+
+/* Chứng chỉ - Giải thường */
+
+ 
+.bg-grey {
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    padding: 20px;
+}
+
+.chung-chi {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.cert {
+    width: 100%;
+    padding: 10px;
+}
+
+.cert-1, .cert-2, .cert-3 {
+    display:block;
+    gap: 20px;
+    text-align: center;
+}
+
+
+    
+
+
+
+
+
+
+/* Dự án */
+
+#project{
+    height: 850px;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    column-gap: 20px;
+    /* background-color: palevioletred; */
+    justify-content: center;    
+    color: grey;
+    grid-template-columns: repeat(1fr, 1fr);
+
+}
+
+/* .project-info{
+    display: grid;
+    grid-template-columns: 1fr;
+} */
+
+.personal-CV{
+    padding: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.job{
+    padding: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.job p{
+    display: inline-block;
+}
+
+.job::before{
+    content:"2021";
+    color: white;
+    background-color:lightskyblue ;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.description{
+    padding: 10px;
+    border-bottom: 1px solid gainsboro;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 16px;
+}
+
+
+.mission{
+    padding: 10px;
+    border-bottom: 1px solid gainsboro;
+    /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    display: flex;
+    font-size: 16px;
+}
+
+.technologie{
+    padding: 10px;
+    border-bottom: 1px solid gainsboro;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 16px;
+}
+
+#project{
+    padding: 40px;
+    margin: 60px;
+}
+
+#footer{
+    height:100px;
+
+}
+
+.footer{
+    padding-top: 50px;
+}
+
+#footer li{
+  display: inline-block;
+  color: gray;
+  margin-right: 30px;
+}
+
+}
